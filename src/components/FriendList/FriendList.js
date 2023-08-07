@@ -1,5 +1,4 @@
 import { List, FriendItem, Status, FriendImg } from './FriendList.styled';
-
 export const FriendsList = ({ friends }) => {
   return (
     <List>
