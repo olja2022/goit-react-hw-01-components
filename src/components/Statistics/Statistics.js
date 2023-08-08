@@ -16,7 +16,6 @@ export const Statistics = ({ title, stats }) => {
     }
     return acc;
   }, []);
-
   return (
     <Section>
       {title && <h2>{title}</h2>}
