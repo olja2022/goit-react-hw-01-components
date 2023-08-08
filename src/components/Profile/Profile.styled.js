@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProfileDiv = styled.div`
+export const Box = styled.div`
   width: 600px;
   margin: 40px 20px;
   display: flex;
@@ -12,7 +12,7 @@ export const ProfileDiv = styled.div`
   border-radius: 12px;
 `;
 
-export const ProfileImg = styled.img`
+export const Img = styled.img`
   width: 240px;
   border-radius: 50%;
   margin-top: 40px;
@@ -21,27 +21,27 @@ export const ProfileImg = styled.img`
     0px 2px 2px rgba(0, 0, 0, 0.12);
 `;
 
-export const ProfileDescr = styled.div``;
-export const ProfileName = styled.p`
+export const Descr = styled.div``;
+export const Name = styled.p`
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 18px;
 `;
 
-export const ProfileTag = styled.p`
+export const Tag = styled.p`
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 600;
 `;
 
-export const ProfileLocation = styled.p`
+export const Location = styled.p`
   margin-bottom: 26px;
   font-size: 16px;
   font-weight: 600;
   color: #0505057e;
 `;
 
-export const ProfileStats = styled.ul`
+export const Stats = styled.ul`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -51,18 +51,18 @@ export const ProfileStats = styled.ul`
   background-color: #f5fffa;
 `;
 
-export const ProfileStatsItem = styled.li`
+export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
 `;
 
-export const ProfileQuantity = styled.span`
+export const Quantity = styled.span`
   margin-top: 6px;
   font-size: 18px;
   font-weight: 600;
 `;
 
-export const ProfileLabel = styled.span`
+export const Label = styled.span`
   color: #0505057e;
   font-weight: 600;
 `;

@@ -16,8 +16,7 @@ export const TransactionHistory = ({ transData }) => {
       </thead>
 
       <tbody>
-        {transData.map((item, index) => {
-          const { id, type, amount, currency } = item;
+        {transData.map(({ id, type, amount, currency }, index) => {
           return (
             <TransactionTr key={id} $even={index % 2 === 0}>
               <TransitionTd>{type}</TransitionTd>

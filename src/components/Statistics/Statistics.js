@@ -1,9 +1,4 @@
-import {
-  StatsSection,
-  StatsItem,
-  StatsList,
-  StatsLabel,
-} from './Statistics.styled';
+import { Section, Item, List, Label } from './Statistics.styled';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -23,16 +18,16 @@ export const Statistics = ({ title, stats }) => {
   }, []);
 
   return (
-    <StatsSection>
+    <Section>
       {title && <h2>{title}</h2>}
-      <StatsList>
+      <List>
         {combinedStats.map(item => (
-          <StatsItem key={item.id} color={getRandomHexColor()}>
-            <StatsLabel>{item.label}</StatsLabel>
+          <Item key={item.id} color={getRandomHexColor()}>
+            <Label>{item.label}</Label>
             <span>{item.percentage} %</span>
-          </StatsItem>
+          </Item>
         ))}
-      </StatsList>
-    </StatsSection>
+      </List>
+    </Section>
   );
 };

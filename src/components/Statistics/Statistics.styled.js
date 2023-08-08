@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
-export const StatsSection = styled.section`
+export const Section = styled.section`
   text-align: center;
   width: 600px;
   border: 1px #f5fffa;
   margin: 40px 20px;
 `;
 
-export const StatsList = styled.ul`
+export const List = styled.ul`
   height: 40px;
   display: flex;
   justify-content: space-around;
   flex: 1;
 `;
 
-export const StatsItem = styled.li`
+export const Item = styled.li`
   background-color: ${props => props.color};
   flex: 1;
   display: flex;
@@ -25,7 +25,7 @@ export const StatsItem = styled.li`
   font-weight: 500;
 `;
 
-export const StatsLabel = styled.span`
+export const Label = styled.span`
   margin-right: 5px;
   font-weight: 600;
 `;

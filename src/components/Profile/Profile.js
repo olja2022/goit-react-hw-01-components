@@ -1,14 +1,14 @@
 import {
-  ProfileDiv,
-  ProfileImg,
-  ProfileDescr,
-  ProfileName,
-  ProfileTag,
-  ProfileLocation,
-  ProfileStats,
-  ProfileStatsItem,
-  ProfileQuantity,
-  ProfileLabel,
+  Box,
+  Img,
+  Descr,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  StatsItem,
+  Quantity,
+  Label,
 } from './Profile.styled';
 
 export const Profile = ({ user }) => {
@@ -20,28 +20,28 @@ export const Profile = ({ user }) => {
     stats: { followers, views, likes },
   } = user;
   return (
-    <ProfileDiv>
-      <ProfileDescr>
-        <ProfileImg src={avatar} alt="User avatar" />
-        <ProfileName>{username}</ProfileName>
-        <ProfileTag>@{tag}</ProfileTag>
-        <ProfileLocation>{location}</ProfileLocation>
-      </ProfileDescr>
+    <Box>
+      <Descr>
+        <Img src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Descr>
 
-      <ProfileStats>
-        <ProfileStatsItem>
-          <ProfileLabel>Followers </ProfileLabel>
-          <ProfileQuantity>{followers}</ProfileQuantity>
-        </ProfileStatsItem>
-        <ProfileStatsItem>
-          <ProfileLabel>Views </ProfileLabel>
-          <ProfileQuantity>{views}</ProfileQuantity>
-        </ProfileStatsItem>
-        <ProfileStatsItem>
-          <ProfileLabel>Likes </ProfileLabel>
-          <ProfileQuantity>{likes}</ProfileQuantity>
-        </ProfileStatsItem>
-      </ProfileStats>
-    </ProfileDiv>
+      <Stats>
+        <StatsItem>
+          <Label>Followers </Label>
+          <Quantity>{followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views </Label>
+          <Quantity>{views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes </Label>
+          <Quantity>{likes}</Quantity>
+        </StatsItem>
+      </Stats>
+    </Box>
   );
 };
